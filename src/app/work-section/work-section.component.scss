@@ -1,0 +1,44 @@
+.container {
+  grid-column: 1;
+
+  .title {
+    .eyebrow {
+
+    }
+
+    .page-title {
+
+    }
+
+    .summary {
+
+    }
+
+  }
+
+  .contents {
+    .jobs {
+      display: grid;
+      grid-auto-flow: column;
+      
+      .job {
+        .year {
+
+        }
+
+        .job-info {
+          .role {
+
+          }
+          .company {
+
+          }
+          .duties {
+            
+          }
+        }
+      }
+    }
+
+  }
+}

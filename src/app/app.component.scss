@@ -1,0 +1,12 @@
+.main-section {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  gap: clamp(3rem, 5vw, 10rem);
+  grid-auto-flow: dense;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  .nav, .section {
+    display: grid;
+  }
+}

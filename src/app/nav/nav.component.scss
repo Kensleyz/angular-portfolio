@@ -1,0 +1,51 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+
+aside {
+  grid-column: 2;
+  align-self: stretch;
+  margin-left: 3rem;
+
+  .icon-list {
+    display: grid;
+    gap: 3rem;
+    list-style: none;
+    margin-left: clamp(3rem, 10vw, 10rem);
+    height: 100%;
+    border-left: 1px solid orange;
+    margin: 0;
+    align-content: center;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding-left: 2rem;
+
+      &:after {
+        --size: 0.5rem;
+
+        content: '';
+        width: var(--size);
+        aspect-ratio: 1;
+        background: yellow;
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transform: translateX(-50%);
+        outline: 0.5rem solid pink;
+      }
+
+      img {
+
+      }
+    }
+  }
+}
